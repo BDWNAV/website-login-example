@@ -24,14 +24,14 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 //define external routes
-const createaccountRoute = require("./routes/createaccountRoute");
+const registerRoute = require("./routes/registerRoute");
 const userRoute = require("./routes/userRoute");
 
 app.get('/', (req, res) => {
     res.send("Bruh");
 });
 
-app.use('/create-account', createaccountRoute);
+app.use('/register', registerRoute);
 app.use('/user', userRoute);
 app.use('/user/:id', userRoute);
 

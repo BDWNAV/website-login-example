@@ -3,7 +3,7 @@ const router = express.Router();
 const userSchema = require("../models/userSchema");
 
 router.get('/', (req, res) => {
-    res.render('index');
+    res.render('register');
 });
 
 router.post('/', async (req, res) => {
