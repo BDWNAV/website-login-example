@@ -25,6 +25,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 //define external routes
 const registerRoute = require("./routes/registerRoute");
+const loginRoute = require("./routes/loginRoute");
 const userRoute = require("./routes/userRoute");
 
 app.get('/', (req, res) => {
@@ -32,6 +33,7 @@ app.get('/', (req, res) => {
 });
 
 app.use('/register', registerRoute);
+app.use('/login', loginRoute);
 app.use('/user', userRoute);
 app.use('/user/:id', userRoute);
 

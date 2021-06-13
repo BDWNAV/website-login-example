@@ -15,6 +15,11 @@ h1 {
     text-align: center;
 }
 
+.login-line {
+    text-align: center;
+    width: 220px;
+}
+
 .important-credentials {
     text-align: center;
     margin-top: 180px;
