@@ -1,2 +1,2 @@
 # website-login-example
-This is a website login example that you can use for referance, if you ever want to build a login system with express, mongodb (mongoose) and ejs. **WARNING: THIS GUIDE DOES NOT USE PASSPORT, IF YOU WOULD LIKE TO USE PASSPORT READ THE [DOCS](http://www.passportjs.org/)!**
+This is a website login example that you can use for referance, if you ever want to build a login system with express, mongodb (mongoose) and ejs. **WARNING: THIS GUIDE DOES NOT USE PASSPORT, IF YOU WOULD LIKE TO USE PASSPORT READ THE [DOCS](http://www.passportjs.org/)! THE CSS IS ALSO VERY BASIC!**
