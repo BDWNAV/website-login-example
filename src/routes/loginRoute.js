@@ -16,7 +16,7 @@ router.post('/', async (req, res) => {
     if(userData) {
         res.redirect(`/user/${userData._id}`);
     } else {
-        res.send("There was no Data")
+        res.render('userError');
     }
 });
 

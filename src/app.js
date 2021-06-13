@@ -27,6 +27,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 const registerRoute = require("./routes/registerRoute");
 const loginRoute = require("./routes/loginRoute");
 const userRoute = require("./routes/userRoute");
+const errorRoute = require("./routes/error");
 
 app.get('/', (req, res) => {
     res.send("Bruh");
@@ -36,6 +37,7 @@ app.use('/register', registerRoute);
 app.use('/login', loginRoute);
 app.use('/user', userRoute);
 app.use('/user/:id', userRoute);
+app.use('*', errorRoute);
 
 //Listen on port 3000
 app.listen(port, () => {
